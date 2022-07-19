@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #002146;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+}
+
+
+
+.progress {
+    height: 5px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.progress--bar {
+    background-color: #00FF00;
+    height: 100%;
+    transition: all ease .5s;
+}
+
+.questionArea,
+.scoreArea {
+    display: none;
+}
+
+.questionArea {
+    max-width: 500px;
+    width: 100%;
+}
+
+.question {
+    text-align: center;
+    color: #FFF;
+    font-size: 16px;
+    margin: 10px 0;
+    padding: 7px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: rgba(31, 153, 223, 0.15);
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background-color: rgba(31, 153, 223, 0.15);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color: #FFF;
+    font-size: 16px;
+    cursor: pointer;
+    font-style: italic;
+}
+
+.option span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    font-size: 22px;
+    border-radius: 50%;
+    margin-left: 8px;
+    margin-right: 10px;
+    font-weight: bold;
+    background-color: #002146;
+    color: #FFF;
+}
+
+.option:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.scoreArea {
+    background-color: rgba(31, 153, 223, 0.15);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 10px;
+    text-align: center;
+}
+
+.prizeImage {
+    height: 130px;
+    margin-bottom: 10px;
+}
+
+.scoreText1 {
+    color: #FFF;
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.scorePct {
+    color: #0d630d;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.scoreText2 {
+    font-size: 16px;
+    color: #FFF;
+    margin-bottom: 10px;
+}
+
+.scoreArea button {
+    border: 0;
+    border-radius: 5px;
+    background-color: #fcb933;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.scoreArea button:hover {
+    background-color: #916714;
+}
+
+
+footer {
+    margin-top: 15px;
+    text-align: center;
+    color: #FFF;
+    font-size: 13px;
+}
+
+.sociais {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.sociais i {
+    padding: 0 10px;
+}
+
+.sociais i:hover {
+    color: rgba(31, 153, 223, 0.2);
+}
+
+.sociais a {
+    color: #FFF;
+}
